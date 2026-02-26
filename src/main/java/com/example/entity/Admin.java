@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
+import org.hibernate.annotations.DynamicUpdate;
 
 /**
  * 管理员信息实体类，对应数据库表 admin
@@ -12,13 +13,14 @@ import lombok.AllArgsConstructor;
 //@NoArgsConstructor   // 生成无参构造方法
 //@AllArgsConstructor  // 生成全参构造方法
 @Entity
+@DynamicUpdate
 @Table(name = "admin")
 public class Admin {
     /**
      * ID主键，自动增长
      */
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     /**

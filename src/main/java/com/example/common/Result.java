@@ -44,5 +44,13 @@ public class Result {
         result.setData(data);
         return result;
     }
+    public  static Result error(String code, String msg, Object data) {
+        Result result = new Result();
+        result.setCode(code);
+        result.setMsg(msg);
+        result.setData(data);
+        return result;
+    }
+
 
 }
