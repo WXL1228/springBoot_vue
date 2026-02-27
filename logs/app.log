@@ -2129,3 +2129,1148 @@ org.springframework.dao.InvalidDataAccessApiUsageException: Page offset exceeds 
 2026-02-27T15:38:44.112+08:00  INFO 44320 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
 2026-02-27T15:38:44.376+08:00  INFO 44320 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9090 (http) with context path '/'
 2026-02-27T15:38:44.381+08:00  INFO 44320 --- [main] com.example.SpringBootVueApplication     : Started SpringBootVueApplication in 2.916 seconds (process running for 3.448)
+2026-02-27T15:53:13.416+08:00  INFO 44320 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-27T15:53:13.428+08:00  INFO 44320 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-27T15:53:13.432+08:00  INFO 44320 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T15:53:13.433+08:00  INFO 44320 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-27T15:53:13.440+08:00  INFO 44320 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-27T15:53:16.623+08:00  INFO 37784 --- [main] com.example.SpringBootVueApplication     : Starting SpringBootVueApplication using Java 21.0.10 with PID 37784 (C:\javaProject\springBoot_vue\target\classes started by wxl99 in C:\javaProject\springBoot_vue)
+2026-02-27T15:53:16.624+08:00 DEBUG 37784 --- [main] com.example.SpringBootVueApplication     : Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-02-27T15:53:16.625+08:00  INFO 37784 --- [main] com.example.SpringBootVueApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T15:53:17.155+08:00  INFO 37784 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27T15:53:17.195+08:00  INFO 37784 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 1 JPA repository interface.
+2026-02-27T15:53:17.557+08:00  INFO 37784 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9090 (http)
+2026-02-27T15:53:17.566+08:00  INFO 37784 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-27T15:53:17.567+08:00  INFO 37784 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-27T15:53:17.598+08:00  INFO 37784 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 942 ms
+2026-02-27T15:53:17.687+08:00  INFO 37784 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-27T15:53:17.690+08:00  WARN 37784 --- [main] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2026-02-27T15:53:17.805+08:00  INFO 37784 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@9c0d0bd
+2026-02-27T15:53:17.806+08:00  INFO 37784 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-27T15:53:17.829+08:00  INFO 37784 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-27T15:53:17.859+08:00  INFO 37784 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-02-27T15:53:18.171+08:00  INFO 37784 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27T15:53:18.227+08:00  WARN 37784 --- [main] org.hibernate.orm.core                   : HHH000511: The 5.7.44 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-02-27T15:53:18.238+08:00  INFO 37784 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/springboot_vue?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false&useSSl=false]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.7.44
+	Default catalog/schema: springboot_vue/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-27T15:53:18.725+08:00  INFO 37784 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27T15:53:18.729+08:00  INFO 37784 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T15:53:18.774+08:00  INFO 37784 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-27T15:53:18.930+08:00  WARN 37784 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-27T15:53:18.958+08:00  INFO 37784 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-27T15:53:19.196+08:00  INFO 37784 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9090 (http) with context path '/'
+2026-02-27T15:53:19.201+08:00  INFO 37784 --- [main] com.example.SpringBootVueApplication     : Started SpringBootVueApplication in 2.955 seconds (process running for 3.51)
+2026-02-27T15:53:25.817+08:00  INFO 37784 --- [http-nio-9090-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [Hm_lvt_481f8d5780451a6574bca774580e430b=1768545701,1768791610,1768958941,1769667580;] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2026-02-27T15:53:25.823+08:00  INFO 37784 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-27T15:53:25.823+08:00  INFO 37784 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-27T15:53:25.824+08:00  INFO 37784 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-02-27T15:53:26.373+08:00  INFO 37784 --- [http-nio-9090-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 327 ms
+2026-02-27T15:53:38.192+08:00 DEBUG 37784 --- [http-nio-9090-exec-2] org.hibernate.SQL                        : 
+    select
+        a1_0.id,
+        a1_0.avatar,
+        a1_0.name,
+        a1_0.password,
+        a1_0.role,
+        a1_0.username 
+    from
+        admin a1_0 
+    where
+        a1_0.id=?
+2026-02-27T15:53:38.202+08:00 TRACE 37784 --- [http-nio-9090-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [6]
+2026-02-27T16:00:21.458+08:00  INFO 37784 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-27T16:00:21.470+08:00  INFO 37784 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-27T16:00:21.473+08:00  INFO 37784 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T16:00:21.475+08:00  INFO 37784 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-27T16:00:21.481+08:00  INFO 37784 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-27T16:01:29.837+08:00  INFO 44412 --- [main] com.example.SpringBootVueApplication     : Starting SpringBootVueApplication using Java 21.0.10 with PID 44412 (C:\javaProject\springBoot_vue\target\classes started by wxl99 in C:\javaProject\springBoot_vue)
+2026-02-27T16:01:29.839+08:00 DEBUG 44412 --- [main] com.example.SpringBootVueApplication     : Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-02-27T16:01:29.840+08:00  INFO 44412 --- [main] com.example.SpringBootVueApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T16:01:30.334+08:00  INFO 44412 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27T16:01:30.367+08:00  INFO 44412 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interface.
+2026-02-27T16:01:30.670+08:00  INFO 44412 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9090 (http)
+2026-02-27T16:01:30.681+08:00  INFO 44412 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-27T16:01:30.681+08:00  INFO 44412 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-27T16:01:30.715+08:00  INFO 44412 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 845 ms
+2026-02-27T16:01:30.815+08:00  INFO 44412 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-27T16:01:30.817+08:00  WARN 44412 --- [main] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2026-02-27T16:01:30.952+08:00  INFO 44412 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@9c0d0bd
+2026-02-27T16:01:30.953+08:00  INFO 44412 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-27T16:01:30.975+08:00  INFO 44412 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-27T16:01:31.008+08:00  INFO 44412 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-02-27T16:01:31.321+08:00  INFO 44412 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27T16:01:31.400+08:00  WARN 44412 --- [main] org.hibernate.orm.core                   : HHH000511: The 5.7.44 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-02-27T16:01:31.417+08:00  INFO 44412 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/springboot_vue?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false&useSSl=false]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.7.44
+	Default catalog/schema: springboot_vue/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-27T16:01:32.056+08:00  INFO 44412 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27T16:01:32.061+08:00  INFO 44412 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T16:01:32.121+08:00  INFO 44412 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-27T16:01:32.371+08:00  WARN 44412 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-27T16:01:32.406+08:00  INFO 44412 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-27T16:01:32.736+08:00  INFO 44412 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9090 (http) with context path '/'
+2026-02-27T16:01:32.758+08:00  INFO 44412 --- [main] com.example.SpringBootVueApplication     : Started SpringBootVueApplication in 3.244 seconds (process running for 3.762)
+2026-02-27T16:01:38.348+08:00  INFO 44412 --- [http-nio-9090-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [Hm_lvt_481f8d5780451a6574bca774580e430b=1768545701,1768791610,1768958941,1769667580;] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2026-02-27T16:01:38.354+08:00  INFO 44412 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-27T16:01:38.355+08:00  INFO 44412 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-27T16:01:38.356+08:00  INFO 44412 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-02-27T16:01:38.856+08:00  INFO 44412 --- [http-nio-9090-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 287 ms
+2026-02-27T16:01:50.777+08:00 DEBUG 44412 --- [http-nio-9090-exec-6] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        a1_0.id,
+        a1_0.avatar,
+        a1_0.name,
+        a1_0.password,
+        a1_0.role,
+        a1_0.username 
+    from
+        admin a1_0 
+    where
+        a1_0.id in (?, ?)
+2026-02-27T16:01:50.786+08:00 TRACE 44412 --- [http-nio-9090-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [6]
+2026-02-27T16:01:50.787+08:00 TRACE 44412 --- [http-nio-9090-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (2:INTEGER) <- [7]
+2026-02-27T16:01:56.181+08:00 DEBUG 44412 --- [http-nio-9090-exec-5] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        a1_0.id,
+        a1_0.avatar,
+        a1_0.name,
+        a1_0.password,
+        a1_0.role,
+        a1_0.username 
+    from
+        admin a1_0 
+    where
+        a1_0.id in (?, ?)
+2026-02-27T16:01:56.182+08:00 TRACE 44412 --- [http-nio-9090-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [5]
+2026-02-27T16:01:56.182+08:00 TRACE 44412 --- [http-nio-9090-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (2:INTEGER) <- [6]
+2026-02-27T16:03:52.177+08:00  INFO 44412 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-27T16:03:52.189+08:00  INFO 44412 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-27T16:03:52.192+08:00  INFO 44412 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T16:03:52.194+08:00  INFO 44412 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-27T16:03:52.199+08:00  INFO 44412 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-27T16:03:55.382+08:00  INFO 41968 --- [main] com.example.SpringBootVueApplication     : Starting SpringBootVueApplication using Java 21.0.10 with PID 41968 (C:\javaProject\springBoot_vue\target\classes started by wxl99 in C:\javaProject\springBoot_vue)
+2026-02-27T16:03:55.383+08:00 DEBUG 41968 --- [main] com.example.SpringBootVueApplication     : Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-02-27T16:03:55.384+08:00  INFO 41968 --- [main] com.example.SpringBootVueApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T16:03:55.847+08:00  INFO 41968 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27T16:03:55.879+08:00  INFO 41968 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interface.
+2026-02-27T16:03:56.149+08:00  INFO 41968 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9090 (http)
+2026-02-27T16:03:56.158+08:00  INFO 41968 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-27T16:03:56.158+08:00  INFO 41968 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-27T16:03:56.188+08:00  INFO 41968 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 777 ms
+2026-02-27T16:03:56.277+08:00  INFO 41968 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-27T16:03:56.279+08:00  WARN 41968 --- [main] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2026-02-27T16:03:56.385+08:00  INFO 41968 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7910f355
+2026-02-27T16:03:56.387+08:00  INFO 41968 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-27T16:03:56.410+08:00  INFO 41968 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-27T16:03:56.442+08:00  INFO 41968 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-02-27T16:03:56.729+08:00  INFO 41968 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27T16:03:56.781+08:00  WARN 41968 --- [main] org.hibernate.orm.core                   : HHH000511: The 5.7.44 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-02-27T16:03:56.791+08:00  INFO 41968 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/springboot_vue?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false&useSSl=false]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.7.44
+	Default catalog/schema: springboot_vue/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-27T16:03:57.257+08:00  INFO 41968 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27T16:03:57.262+08:00  INFO 41968 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T16:03:57.305+08:00  INFO 41968 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-27T16:03:57.452+08:00  WARN 41968 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-27T16:03:57.473+08:00  INFO 41968 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-27T16:03:57.711+08:00  INFO 41968 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9090 (http) with context path '/'
+2026-02-27T16:03:57.715+08:00  INFO 41968 --- [main] com.example.SpringBootVueApplication     : Started SpringBootVueApplication in 2.659 seconds (process running for 3.19)
+2026-02-27T16:04:02.122+08:00  INFO 41968 --- [http-nio-9090-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [Hm_lvt_481f8d5780451a6574bca774580e430b=1768545701,1768791610,1768958941,1769667580;] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2026-02-27T16:04:02.127+08:00  INFO 41968 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-27T16:04:02.128+08:00  INFO 41968 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-27T16:04:02.129+08:00  INFO 41968 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-02-27T16:04:02.699+08:00  INFO 41968 --- [http-nio-9090-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 341 ms
+2026-02-27T16:05:54.695+08:00  INFO 41968 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-27T16:05:54.709+08:00  INFO 41968 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-27T16:05:54.711+08:00  INFO 41968 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T16:05:54.713+08:00  INFO 41968 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-27T16:05:54.718+08:00  INFO 41968 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-27T16:05:57.567+08:00  INFO 43404 --- [main] com.example.SpringBootVueApplication     : Starting SpringBootVueApplication using Java 21.0.10 with PID 43404 (C:\javaProject\springBoot_vue\target\classes started by wxl99 in C:\javaProject\springBoot_vue)
+2026-02-27T16:05:57.569+08:00 DEBUG 43404 --- [main] com.example.SpringBootVueApplication     : Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-02-27T16:05:57.570+08:00  INFO 43404 --- [main] com.example.SpringBootVueApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T16:05:58.069+08:00  INFO 43404 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27T16:05:58.103+08:00  INFO 43404 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interface.
+2026-02-27T16:05:58.420+08:00  INFO 43404 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9090 (http)
+2026-02-27T16:05:58.430+08:00  INFO 43404 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-27T16:05:58.430+08:00  INFO 43404 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-27T16:05:58.465+08:00  INFO 43404 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 865 ms
+2026-02-27T16:05:58.572+08:00  INFO 43404 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-27T16:05:58.575+08:00  WARN 43404 --- [main] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2026-02-27T16:05:58.698+08:00  INFO 43404 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1da745a2
+2026-02-27T16:05:58.699+08:00  INFO 43404 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-27T16:05:58.720+08:00  INFO 43404 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-27T16:05:58.752+08:00  INFO 43404 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-02-27T16:05:59.061+08:00  INFO 43404 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27T16:05:59.127+08:00  WARN 43404 --- [main] org.hibernate.orm.core                   : HHH000511: The 5.7.44 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-02-27T16:05:59.140+08:00  INFO 43404 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/springboot_vue?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false&useSSl=false]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.7.44
+	Default catalog/schema: springboot_vue/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-27T16:05:59.736+08:00  INFO 43404 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27T16:05:59.743+08:00  INFO 43404 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T16:05:59.808+08:00  INFO 43404 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-27T16:05:59.998+08:00  WARN 43404 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-27T16:06:00.024+08:00  INFO 43404 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-27T16:06:00.413+08:00  INFO 43404 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9090 (http) with context path '/'
+2026-02-27T16:06:00.419+08:00  INFO 43404 --- [main] com.example.SpringBootVueApplication     : Started SpringBootVueApplication in 3.214 seconds (process running for 3.73)
+2026-02-27T16:06:04.286+08:00  INFO 43404 --- [http-nio-9090-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [Hm_lvt_481f8d5780451a6574bca774580e430b=1768545701,1768791610,1768958941,1769667580;] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2026-02-27T16:06:04.297+08:00  INFO 43404 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-27T16:06:04.298+08:00  INFO 43404 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-27T16:06:04.299+08:00  INFO 43404 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-02-27T16:06:04.846+08:00  INFO 43404 --- [http-nio-9090-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 331 ms
+2026-02-27T16:06:19.784+08:00 ERROR 43404 --- [http-nio-9090-exec-5] c.e.exception.GlobalExceptionHandler     : 系统异常
+
+org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('ï' (code 239)): was expecting comma to separate Array entries
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:363) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.read(AbstractJacksonHttpMessageConverter.java:319) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:203) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:181) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:156) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:174) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.18.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.18.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: tools.jackson.core.exc.StreamReadException: Unexpected character ('ï' (code 239)): was expecting comma to separate Array entries
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #5]
+	at tools.jackson.core.JsonParser._constructReadException(JsonParser.java:1800) ~[jackson-core-3.0.4.jar:3.0.4]
+	at tools.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:1049) ~[jackson-core-3.0.4.jar:3.0.4]
+	at tools.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:728) ~[jackson-core-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.jdk.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:339) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.jdk.CollectionDeserializer.deserialize(CollectionDeserializer.java:238) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.jdk.CollectionDeserializer.deserialize(CollectionDeserializer.java:29) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.DeserializationContextExt.readRootValue(DeserializationContextExt.java:265) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:1646) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.ObjectReader.readValue(ObjectReader.java:1171) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:352) ~[spring-web-7.0.5.jar:7.0.5]
+	... 46 common frames omitted
+
+2026-02-27T16:06:56.270+08:00 ERROR 43404 --- [http-nio-9090-exec-6] c.e.exception.GlobalExceptionHandler     : 系统异常
+
+org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.ArrayList<java.lang.Integer>` from Object value (token `JsonToken.START_OBJECT`)
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:363) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.read(AbstractJacksonHttpMessageConverter.java:319) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:203) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:181) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:156) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:174) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.18.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.18.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: tools.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.util.ArrayList<java.lang.Integer>` from Object value (token `JsonToken.START_OBJECT`)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #0]
+	at tools.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:63) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1818) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1614) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1563) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.jdk.CollectionDeserializer.handleNonArray(CollectionDeserializer.java:395) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.jdk.CollectionDeserializer.deserialize(CollectionDeserializer.java:246) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.jdk.CollectionDeserializer.deserialize(CollectionDeserializer.java:29) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.DeserializationContextExt.readRootValue(DeserializationContextExt.java:265) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:1646) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.ObjectReader.readValue(ObjectReader.java:1171) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:352) ~[spring-web-7.0.5.jar:7.0.5]
+	... 46 common frames omitted
+
+2026-02-27T16:07:08.999+08:00 ERROR 43404 --- [http-nio-9090-exec-8] c.e.exception.GlobalExceptionHandler     : 系统异常
+
+org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.ArrayList<java.lang.Integer>` from Object value (token `JsonToken.START_OBJECT`)
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:363) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.read(AbstractJacksonHttpMessageConverter.java:319) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:203) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:181) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:156) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:174) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.18.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.18.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: tools.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.util.ArrayList<java.lang.Integer>` from Object value (token `JsonToken.START_OBJECT`)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #0]
+	at tools.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:63) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1818) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1614) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1563) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.jdk.CollectionDeserializer.handleNonArray(CollectionDeserializer.java:395) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.jdk.CollectionDeserializer.deserialize(CollectionDeserializer.java:246) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.jdk.CollectionDeserializer.deserialize(CollectionDeserializer.java:29) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.DeserializationContextExt.readRootValue(DeserializationContextExt.java:265) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:1646) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.ObjectReader.readValue(ObjectReader.java:1171) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:352) ~[spring-web-7.0.5.jar:7.0.5]
+	... 46 common frames omitted
+
+2026-02-27T16:07:15.395+08:00 ERROR 43404 --- [http-nio-9090-exec-9] c.e.exception.GlobalExceptionHandler     : 系统异常
+
+org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.ArrayList<java.lang.Integer>` from Object value (token `JsonToken.START_OBJECT`)
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:363) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.read(AbstractJacksonHttpMessageConverter.java:319) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:203) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:181) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:156) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:174) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.18.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.18.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: tools.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.util.ArrayList<java.lang.Integer>` from Object value (token `JsonToken.START_OBJECT`)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #0]
+	at tools.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:63) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1818) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1614) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1563) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.jdk.CollectionDeserializer.handleNonArray(CollectionDeserializer.java:395) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.jdk.CollectionDeserializer.deserialize(CollectionDeserializer.java:246) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.jdk.CollectionDeserializer.deserialize(CollectionDeserializer.java:29) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.DeserializationContextExt.readRootValue(DeserializationContextExt.java:265) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:1646) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.ObjectReader.readValue(ObjectReader.java:1171) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:352) ~[spring-web-7.0.5.jar:7.0.5]
+	... 46 common frames omitted
+
+2026-02-27T16:07:26.541+08:00 ERROR 43404 --- [http-nio-9090-exec-10] c.e.exception.GlobalExceptionHandler     : 系统异常
+
+org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('ï' (code 239)): was expecting comma to separate Array entries
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:363) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.read(AbstractJacksonHttpMessageConverter.java:319) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:203) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:181) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:156) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:174) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.18.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.18.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: tools.jackson.core.exc.StreamReadException: Unexpected character ('ï' (code 239)): was expecting comma to separate Array entries
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #6]
+	at tools.jackson.core.JsonParser._constructReadException(JsonParser.java:1800) ~[jackson-core-3.0.4.jar:3.0.4]
+	at tools.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:1049) ~[jackson-core-3.0.4.jar:3.0.4]
+	at tools.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:728) ~[jackson-core-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.jdk.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:339) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.jdk.CollectionDeserializer.deserialize(CollectionDeserializer.java:238) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.jdk.CollectionDeserializer.deserialize(CollectionDeserializer.java:29) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.DeserializationContextExt.readRootValue(DeserializationContextExt.java:265) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:1646) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.ObjectReader.readValue(ObjectReader.java:1171) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:352) ~[spring-web-7.0.5.jar:7.0.5]
+	... 46 common frames omitted
+
+2026-02-27T16:07:31.436+08:00 ERROR 43404 --- [http-nio-9090-exec-1] c.e.exception.GlobalExceptionHandler     : 系统异常
+
+org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('ï' (code 239)): was expecting comma to separate Array entries
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:363) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.read(AbstractJacksonHttpMessageConverter.java:319) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:203) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:181) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:156) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:174) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.18.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.18.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: tools.jackson.core.exc.StreamReadException: Unexpected character ('ï' (code 239)): was expecting comma to separate Array entries
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #6]
+	at tools.jackson.core.JsonParser._constructReadException(JsonParser.java:1800) ~[jackson-core-3.0.4.jar:3.0.4]
+	at tools.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:1049) ~[jackson-core-3.0.4.jar:3.0.4]
+	at tools.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:728) ~[jackson-core-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.jdk.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:339) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.jdk.CollectionDeserializer.deserialize(CollectionDeserializer.java:238) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.jdk.CollectionDeserializer.deserialize(CollectionDeserializer.java:29) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.DeserializationContextExt.readRootValue(DeserializationContextExt.java:265) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:1646) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.ObjectReader.readValue(ObjectReader.java:1171) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:352) ~[spring-web-7.0.5.jar:7.0.5]
+	... 46 common frames omitted
+
+2026-02-27T16:17:09.765+08:00  INFO 43404 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-27T16:17:09.777+08:00  INFO 43404 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-27T16:17:09.781+08:00  INFO 43404 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T16:17:09.782+08:00  INFO 43404 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-27T16:17:09.789+08:00  INFO 43404 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-27T16:17:12.495+08:00  INFO 39220 --- [main] com.example.SpringBootVueApplication     : Starting SpringBootVueApplication using Java 21.0.10 with PID 39220 (C:\javaProject\springBoot_vue\target\classes started by wxl99 in C:\javaProject\springBoot_vue)
+2026-02-27T16:17:12.496+08:00 DEBUG 39220 --- [main] com.example.SpringBootVueApplication     : Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-02-27T16:17:12.497+08:00  INFO 39220 --- [main] com.example.SpringBootVueApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T16:17:12.945+08:00  INFO 39220 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27T16:17:12.974+08:00  INFO 39220 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interface.
+2026-02-27T16:17:13.249+08:00  INFO 39220 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9090 (http)
+2026-02-27T16:17:13.259+08:00  INFO 39220 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-27T16:17:13.259+08:00  INFO 39220 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-27T16:17:13.289+08:00  INFO 39220 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 763 ms
+2026-02-27T16:17:13.381+08:00  INFO 39220 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-27T16:17:13.383+08:00  WARN 39220 --- [main] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2026-02-27T16:17:13.485+08:00  INFO 39220 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5e3d2765
+2026-02-27T16:17:13.487+08:00  INFO 39220 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-27T16:17:13.507+08:00  INFO 39220 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-27T16:17:13.538+08:00  INFO 39220 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-02-27T16:17:13.825+08:00  INFO 39220 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27T16:17:13.875+08:00  WARN 39220 --- [main] org.hibernate.orm.core                   : HHH000511: The 5.7.44 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-02-27T16:17:13.886+08:00  INFO 39220 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/springboot_vue?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false&useSSl=false]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.7.44
+	Default catalog/schema: springboot_vue/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-27T16:17:14.348+08:00  INFO 39220 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27T16:17:14.353+08:00  INFO 39220 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T16:17:14.397+08:00  INFO 39220 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-27T16:17:14.542+08:00  WARN 39220 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-27T16:17:14.566+08:00  INFO 39220 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-27T16:17:14.795+08:00  INFO 39220 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9090 (http) with context path '/'
+2026-02-27T16:17:14.799+08:00  INFO 39220 --- [main] com.example.SpringBootVueApplication     : Started SpringBootVueApplication in 2.637 seconds (process running for 3.124)
+2026-02-27T16:17:18.284+08:00  INFO 39220 --- [http-nio-9090-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [Hm_lvt_481f8d5780451a6574bca774580e430b=1768545701,1768791610,1768958941,1769667580;] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2026-02-27T16:17:18.292+08:00  INFO 39220 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-27T16:17:18.293+08:00  INFO 39220 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-27T16:17:18.294+08:00  INFO 39220 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-02-27T16:17:18.914+08:00  INFO 39220 --- [http-nio-9090-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 340 ms
+2026-02-27T16:17:39.966+08:00 ERROR 39220 --- [http-nio-9090-exec-5] c.e.exception.GlobalExceptionHandler     : 系统异常
+
+org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('i' (code 105)): was expecting double-quote to start property name
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:363) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.read(AbstractJacksonHttpMessageConverter.java:319) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:203) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:181) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:156) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:174) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.18.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.18.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: tools.jackson.core.exc.StreamReadException: Unexpected character ('i' (code 105)): was expecting double-quote to start property name
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #1]
+	at tools.jackson.core.JsonParser._constructReadException(JsonParser.java:1800) ~[jackson-core-3.0.4.jar:3.0.4]
+	at tools.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:1049) ~[jackson-core-3.0.4.jar:3.0.4]
+	at tools.jackson.core.json.UTF8StreamJsonParser._handleOddName(UTF8StreamJsonParser.java:2459) ~[jackson-core-3.0.4.jar:3.0.4]
+	at tools.jackson.core.json.UTF8StreamJsonParser._parseName(UTF8StreamJsonParser.java:2110) ~[jackson-core-3.0.4.jar:3.0.4]
+	at tools.jackson.core.json.UTF8StreamJsonParser.nextName(UTF8StreamJsonParser.java:945) ~[jackson-core-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.jdk.MapDeserializer._readAndBindStringKeyMap(MapDeserializer.java:574) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.jdk.MapDeserializer.deserialize(MapDeserializer.java:428) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.jdk.MapDeserializer.deserialize(MapDeserializer.java:30) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.DeserializationContextExt.readRootValue(DeserializationContextExt.java:265) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:1646) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.ObjectReader.readValue(ObjectReader.java:1171) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:352) ~[spring-web-7.0.5.jar:7.0.5]
+	... 46 common frames omitted
+
+2026-02-27T16:18:10.513+08:00 ERROR 39220 --- [http-nio-9090-exec-6] c.e.exception.GlobalExceptionHandler     : 系统异常
+
+org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start property name
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:363) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.read(AbstractJacksonHttpMessageConverter.java:319) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:203) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:181) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:156) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:174) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.18.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.18.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: tools.jackson.core.exc.StreamReadException: Unexpected character ('}' (code 125)): was expecting double-quote to start property name
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #35]
+	at tools.jackson.core.JsonParser._constructReadException(JsonParser.java:1800) ~[jackson-core-3.0.4.jar:3.0.4]
+	at tools.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:1049) ~[jackson-core-3.0.4.jar:3.0.4]
+	at tools.jackson.core.json.UTF8StreamJsonParser._handleOddName(UTF8StreamJsonParser.java:2459) ~[jackson-core-3.0.4.jar:3.0.4]
+	at tools.jackson.core.json.UTF8StreamJsonParser._parseName(UTF8StreamJsonParser.java:2110) ~[jackson-core-3.0.4.jar:3.0.4]
+	at tools.jackson.core.json.UTF8StreamJsonParser.nextName(UTF8StreamJsonParser.java:945) ~[jackson-core-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.jdk.MapDeserializer._readAndBindStringKeyMap(MapDeserializer.java:586) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.jdk.MapDeserializer.deserialize(MapDeserializer.java:428) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.jdk.MapDeserializer.deserialize(MapDeserializer.java:30) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.deser.DeserializationContextExt.readRootValue(DeserializationContextExt.java:265) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:1646) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at tools.jackson.databind.ObjectReader.readValue(ObjectReader.java:1171) ~[jackson-databind-3.0.4.jar:3.0.4]
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:352) ~[spring-web-7.0.5.jar:7.0.5]
+	... 46 common frames omitted
+
+2026-02-27T16:18:21.455+08:00 DEBUG 39220 --- [http-nio-9090-exec-7] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        a1_0.id,
+        a1_0.avatar,
+        a1_0.name,
+        a1_0.password,
+        a1_0.role,
+        a1_0.username 
+    from
+        admin a1_0 
+    where
+        a1_0.id in (?, ?, ?, ?, ?)
+2026-02-27T16:18:21.465+08:00 TRACE 39220 --- [http-nio-9090-exec-7] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [1]
+2026-02-27T16:18:21.465+08:00 TRACE 39220 --- [http-nio-9090-exec-7] org.hibernate.orm.jdbc.bind              : binding parameter (2:INTEGER) <- [2]
+2026-02-27T16:18:21.465+08:00 TRACE 39220 --- [http-nio-9090-exec-7] org.hibernate.orm.jdbc.bind              : binding parameter (3:INTEGER) <- [3]
+2026-02-27T16:18:21.465+08:00 TRACE 39220 --- [http-nio-9090-exec-7] org.hibernate.orm.jdbc.bind              : binding parameter (4:INTEGER) <- [4]
+2026-02-27T16:18:21.465+08:00 TRACE 39220 --- [http-nio-9090-exec-7] org.hibernate.orm.jdbc.bind              : binding parameter (5:INTEGER) <- [5]
+2026-02-27T16:18:56.727+08:00 DEBUG 39220 --- [http-nio-9090-exec-10] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        a1_0.id,
+        a1_0.avatar,
+        a1_0.name,
+        a1_0.password,
+        a1_0.role,
+        a1_0.username 
+    from
+        admin a1_0 
+    where
+        a1_0.id in (?, ?, ?, ?, ?)
+2026-02-27T16:18:56.728+08:00 TRACE 39220 --- [http-nio-9090-exec-10] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [1]
+2026-02-27T16:18:56.729+08:00 TRACE 39220 --- [http-nio-9090-exec-10] org.hibernate.orm.jdbc.bind              : binding parameter (2:INTEGER) <- [2]
+2026-02-27T16:18:56.729+08:00 TRACE 39220 --- [http-nio-9090-exec-10] org.hibernate.orm.jdbc.bind              : binding parameter (3:INTEGER) <- [3]
+2026-02-27T16:18:56.729+08:00 TRACE 39220 --- [http-nio-9090-exec-10] org.hibernate.orm.jdbc.bind              : binding parameter (4:INTEGER) <- [4]
+2026-02-27T16:18:56.729+08:00 TRACE 39220 --- [http-nio-9090-exec-10] org.hibernate.orm.jdbc.bind              : binding parameter (5:INTEGER) <- [5]
+2026-02-27T16:19:09.542+08:00  INFO 39220 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-27T16:19:09.554+08:00  INFO 39220 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-27T16:19:09.556+08:00  INFO 39220 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T16:19:09.558+08:00  INFO 39220 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-27T16:19:09.562+08:00  INFO 39220 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-27T16:19:12.495+08:00  INFO 35168 --- [main] com.example.SpringBootVueApplication     : Starting SpringBootVueApplication using Java 21.0.10 with PID 35168 (C:\javaProject\springBoot_vue\target\classes started by wxl99 in C:\javaProject\springBoot_vue)
+2026-02-27T16:19:12.497+08:00 DEBUG 35168 --- [main] com.example.SpringBootVueApplication     : Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-02-27T16:19:12.498+08:00  INFO 35168 --- [main] com.example.SpringBootVueApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T16:19:12.952+08:00  INFO 35168 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27T16:19:12.982+08:00  INFO 35168 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interface.
+2026-02-27T16:19:13.246+08:00  INFO 35168 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9090 (http)
+2026-02-27T16:19:13.255+08:00  INFO 35168 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-27T16:19:13.255+08:00  INFO 35168 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-27T16:19:13.287+08:00  INFO 35168 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 760 ms
+2026-02-27T16:19:13.376+08:00  INFO 35168 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-27T16:19:13.378+08:00  WARN 35168 --- [main] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2026-02-27T16:19:13.483+08:00  INFO 35168 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@9c0d0bd
+2026-02-27T16:19:13.485+08:00  INFO 35168 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-27T16:19:13.506+08:00  INFO 35168 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-27T16:19:13.536+08:00  INFO 35168 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-02-27T16:19:13.821+08:00  INFO 35168 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27T16:19:13.873+08:00  WARN 35168 --- [main] org.hibernate.orm.core                   : HHH000511: The 5.7.44 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-02-27T16:19:13.883+08:00  INFO 35168 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/springboot_vue?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false&useSSl=false]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.7.44
+	Default catalog/schema: springboot_vue/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-27T16:19:14.345+08:00  INFO 35168 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27T16:19:14.350+08:00  INFO 35168 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T16:19:14.395+08:00  INFO 35168 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-27T16:19:14.549+08:00  WARN 35168 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-27T16:19:14.576+08:00  INFO 35168 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-27T16:19:14.834+08:00  INFO 35168 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9090 (http) with context path '/'
+2026-02-27T16:19:14.838+08:00  INFO 35168 --- [main] com.example.SpringBootVueApplication     : Started SpringBootVueApplication in 2.671 seconds (process running for 3.149)
+2026-02-27T16:19:18.134+08:00  INFO 35168 --- [http-nio-9090-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [Hm_lvt_481f8d5780451a6574bca774580e430b=1768545701,1768791610,1768958941,1769667580;] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2026-02-27T16:19:18.142+08:00  INFO 35168 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-27T16:19:18.142+08:00  INFO 35168 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-27T16:19:18.143+08:00  INFO 35168 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-02-27T16:19:28.280+08:00 DEBUG 35168 --- [http-nio-9090-exec-1] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        a1_0.id,
+        a1_0.avatar,
+        a1_0.name,
+        a1_0.password,
+        a1_0.role,
+        a1_0.username 
+    from
+        admin a1_0 
+    where
+        a1_0.id in (?, ?, ?, ?, ?)
+2026-02-27T16:19:28.294+08:00 TRACE 35168 --- [http-nio-9090-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [1]
+2026-02-27T16:19:28.295+08:00 TRACE 35168 --- [http-nio-9090-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (2:INTEGER) <- [2]
+2026-02-27T16:19:28.295+08:00 TRACE 35168 --- [http-nio-9090-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (3:INTEGER) <- [3]
+2026-02-27T16:19:28.296+08:00 TRACE 35168 --- [http-nio-9090-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (4:INTEGER) <- [4]
+2026-02-27T16:19:28.296+08:00 TRACE 35168 --- [http-nio-9090-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (5:INTEGER) <- [5]
+2026-02-27T16:24:01.769+08:00  INFO 35168 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-27T16:24:01.782+08:00  INFO 35168 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-27T16:24:01.785+08:00  INFO 35168 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T16:24:01.786+08:00  INFO 35168 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-27T16:24:01.792+08:00  INFO 35168 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-27T16:24:05.181+08:00  INFO 44036 --- [main] com.example.SpringBootVueApplication     : Starting SpringBootVueApplication using Java 21.0.10 with PID 44036 (C:\javaProject\springBoot_vue\target\classes started by wxl99 in C:\javaProject\springBoot_vue)
+2026-02-27T16:24:05.183+08:00 DEBUG 44036 --- [main] com.example.SpringBootVueApplication     : Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-02-27T16:24:05.183+08:00  INFO 44036 --- [main] com.example.SpringBootVueApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T16:24:05.699+08:00  INFO 44036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27T16:24:05.735+08:00  INFO 44036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interface.
+2026-02-27T16:24:06.023+08:00  INFO 44036 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9090 (http)
+2026-02-27T16:24:06.033+08:00  INFO 44036 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-27T16:24:06.034+08:00  INFO 44036 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-27T16:24:06.067+08:00  INFO 44036 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 855 ms
+2026-02-27T16:24:06.161+08:00  INFO 44036 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-27T16:24:06.163+08:00  WARN 44036 --- [main] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2026-02-27T16:24:06.271+08:00  INFO 44036 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@9c0d0bd
+2026-02-27T16:24:06.272+08:00  INFO 44036 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-27T16:24:06.293+08:00  INFO 44036 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-27T16:24:06.324+08:00  INFO 44036 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-02-27T16:24:06.619+08:00  INFO 44036 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27T16:24:06.677+08:00  WARN 44036 --- [main] org.hibernate.orm.core                   : HHH000511: The 5.7.44 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-02-27T16:24:06.688+08:00  INFO 44036 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/springboot_vue?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false&useSSl=false]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.7.44
+	Default catalog/schema: springboot_vue/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-27T16:24:07.191+08:00  INFO 44036 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27T16:24:07.196+08:00  INFO 44036 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T16:24:07.244+08:00  INFO 44036 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-27T16:24:07.399+08:00  WARN 44036 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-27T16:24:07.424+08:00  INFO 44036 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-27T16:24:07.671+08:00  INFO 44036 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9090 (http) with context path '/'
+2026-02-27T16:24:07.674+08:00  INFO 44036 --- [main] com.example.SpringBootVueApplication     : Started SpringBootVueApplication in 2.868 seconds (process running for 3.435)
+2026-02-27T16:24:13.674+08:00  INFO 44036 --- [http-nio-9090-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [Hm_lvt_481f8d5780451a6574bca774580e430b=1768545701,1768791610,1768958941,1769667580;] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2026-02-27T16:24:13.681+08:00  INFO 44036 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-27T16:24:13.682+08:00  INFO 44036 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-27T16:24:13.684+08:00  INFO 44036 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-02-27T16:24:13.805+08:00 DEBUG 44036 --- [http-nio-9090-exec-1] org.hibernate.SQL                        : 
+    select
+        a1_0.id,
+        a1_0.avatar,
+        a1_0.name,
+        a1_0.password,
+        a1_0.role,
+        a1_0.username 
+    from
+        admin a1_0 
+    where
+        a1_0.id=?
+2026-02-27T16:24:13.814+08:00 TRACE 44036 --- [http-nio-9090-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [1]
+2026-02-27T16:24:13.842+08:00 DEBUG 44036 --- [http-nio-9090-exec-1] org.hibernate.SQL                        : 
+    select
+        a1_0.id,
+        a1_0.avatar,
+        a1_0.name,
+        a1_0.password,
+        a1_0.role,
+        a1_0.username 
+    from
+        admin a1_0 
+    where
+        a1_0.id=?
+2026-02-27T16:24:13.843+08:00 TRACE 44036 --- [http-nio-9090-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [2]
+2026-02-27T16:24:13.849+08:00 DEBUG 44036 --- [http-nio-9090-exec-1] org.hibernate.SQL                        : 
+    select
+        a1_0.id,
+        a1_0.avatar,
+        a1_0.name,
+        a1_0.password,
+        a1_0.role,
+        a1_0.username 
+    from
+        admin a1_0 
+    where
+        a1_0.id=?
+2026-02-27T16:24:13.850+08:00 TRACE 44036 --- [http-nio-9090-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [3]
+2026-02-27T16:24:13.852+08:00 DEBUG 44036 --- [http-nio-9090-exec-1] org.hibernate.SQL                        : 
+    select
+        a1_0.id,
+        a1_0.avatar,
+        a1_0.name,
+        a1_0.password,
+        a1_0.role,
+        a1_0.username 
+    from
+        admin a1_0 
+    where
+        a1_0.id=?
+2026-02-27T16:24:13.853+08:00 TRACE 44036 --- [http-nio-9090-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [4]
+2026-02-27T16:24:13.856+08:00 DEBUG 44036 --- [http-nio-9090-exec-1] org.hibernate.SQL                        : 
+    select
+        a1_0.id,
+        a1_0.avatar,
+        a1_0.name,
+        a1_0.password,
+        a1_0.role,
+        a1_0.username 
+    from
+        admin a1_0 
+    where
+        a1_0.id=?
+2026-02-27T16:24:13.856+08:00 TRACE 44036 --- [http-nio-9090-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [5]
+2026-02-27T16:24:26.461+08:00 DEBUG 44036 --- [http-nio-9090-exec-2] org.hibernate.SQL                        : 
+    select
+        a1_0.id,
+        a1_0.avatar,
+        a1_0.name,
+        a1_0.password,
+        a1_0.role,
+        a1_0.username 
+    from
+        admin a1_0 
+    where
+        a1_0.id=?
+2026-02-27T16:24:26.461+08:00 TRACE 44036 --- [http-nio-9090-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [1]
+2026-02-27T16:24:26.467+08:00 DEBUG 44036 --- [http-nio-9090-exec-2] org.hibernate.SQL                        : 
+    select
+        a1_0.id,
+        a1_0.avatar,
+        a1_0.name,
+        a1_0.password,
+        a1_0.role,
+        a1_0.username 
+    from
+        admin a1_0 
+    where
+        a1_0.id=?
+2026-02-27T16:24:26.468+08:00 TRACE 44036 --- [http-nio-9090-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [2]
+2026-02-27T16:24:26.473+08:00 DEBUG 44036 --- [http-nio-9090-exec-2] org.hibernate.SQL                        : 
+    select
+        a1_0.id,
+        a1_0.avatar,
+        a1_0.name,
+        a1_0.password,
+        a1_0.role,
+        a1_0.username 
+    from
+        admin a1_0 
+    where
+        a1_0.id=?
+2026-02-27T16:24:26.474+08:00 TRACE 44036 --- [http-nio-9090-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [3]
+2026-02-27T16:24:26.478+08:00 DEBUG 44036 --- [http-nio-9090-exec-2] org.hibernate.SQL                        : 
+    select
+        a1_0.id,
+        a1_0.avatar,
+        a1_0.name,
+        a1_0.password,
+        a1_0.role,
+        a1_0.username 
+    from
+        admin a1_0 
+    where
+        a1_0.id=?
+2026-02-27T16:24:26.479+08:00 TRACE 44036 --- [http-nio-9090-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [4]
+2026-02-27T16:24:26.484+08:00 DEBUG 44036 --- [http-nio-9090-exec-2] org.hibernate.SQL                        : 
+    select
+        a1_0.id,
+        a1_0.avatar,
+        a1_0.name,
+        a1_0.password,
+        a1_0.role,
+        a1_0.username 
+    from
+        admin a1_0 
+    where
+        a1_0.id=?
+2026-02-27T16:24:26.484+08:00 TRACE 44036 --- [http-nio-9090-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [5]
+2026-02-27T16:24:26.489+08:00 DEBUG 44036 --- [http-nio-9090-exec-2] org.hibernate.SQL                        : 
+    select
+        a1_0.id,
+        a1_0.avatar,
+        a1_0.name,
+        a1_0.password,
+        a1_0.role,
+        a1_0.username 
+    from
+        admin a1_0 
+    where
+        a1_0.id=?
+2026-02-27T16:24:26.489+08:00 TRACE 44036 --- [http-nio-9090-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [7]
+2026-02-27T16:24:51.325+08:00  INFO 44036 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-27T16:24:51.337+08:00  INFO 44036 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-27T16:24:51.340+08:00  INFO 44036 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T16:24:51.342+08:00  INFO 44036 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-27T16:24:51.346+08:00  INFO 44036 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-27T16:24:54.367+08:00  INFO 45512 --- [main] com.example.SpringBootVueApplication     : Starting SpringBootVueApplication using Java 21.0.10 with PID 45512 (C:\javaProject\springBoot_vue\target\classes started by wxl99 in C:\javaProject\springBoot_vue)
+2026-02-27T16:24:54.369+08:00 DEBUG 45512 --- [main] com.example.SpringBootVueApplication     : Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-02-27T16:24:54.369+08:00  INFO 45512 --- [main] com.example.SpringBootVueApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T16:24:54.830+08:00  INFO 45512 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27T16:24:54.869+08:00  INFO 45512 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interface.
+2026-02-27T16:24:55.144+08:00  INFO 45512 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9090 (http)
+2026-02-27T16:24:55.153+08:00  INFO 45512 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-27T16:24:55.154+08:00  INFO 45512 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-27T16:24:55.186+08:00  INFO 45512 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 786 ms
+2026-02-27T16:24:55.273+08:00  INFO 45512 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-27T16:24:55.275+08:00  WARN 45512 --- [main] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2026-02-27T16:24:55.387+08:00  INFO 45512 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@34ab26a
+2026-02-27T16:24:55.388+08:00  INFO 45512 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-27T16:24:55.409+08:00  INFO 45512 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-27T16:24:55.440+08:00  INFO 45512 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-02-27T16:24:55.710+08:00  INFO 45512 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27T16:24:55.766+08:00  WARN 45512 --- [main] org.hibernate.orm.core                   : HHH000511: The 5.7.44 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-02-27T16:24:55.777+08:00  INFO 45512 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/springboot_vue?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false&useSSl=false]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.7.44
+	Default catalog/schema: springboot_vue/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-27T16:24:56.248+08:00  INFO 45512 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27T16:24:56.254+08:00  INFO 45512 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T16:24:56.301+08:00  INFO 45512 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-27T16:24:56.463+08:00  WARN 45512 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-27T16:24:56.488+08:00  INFO 45512 --- [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-27T16:24:56.743+08:00  INFO 45512 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9090 (http) with context path '/'
+2026-02-27T16:24:56.748+08:00  INFO 45512 --- [main] com.example.SpringBootVueApplication     : Started SpringBootVueApplication in 2.706 seconds (process running for 3.191)
+2026-02-27T16:24:59.534+08:00  INFO 45512 --- [http-nio-9090-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [Hm_lvt_481f8d5780451a6574bca774580e430b=1768545701,1768791610,1768958941,1769667580;] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2026-02-27T16:24:59.539+08:00  INFO 45512 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-27T16:24:59.540+08:00  INFO 45512 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-27T16:24:59.541+08:00  INFO 45512 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-02-27T16:24:59.790+08:00 DEBUG 45512 --- [http-nio-9090-exec-1] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        a1_0.id,
+        a1_0.avatar,
+        a1_0.name,
+        a1_0.password,
+        a1_0.role,
+        a1_0.username 
+    from
+        admin a1_0 
+    where
+        a1_0.id in (?, ?, ?, ?, ?, ?)
+2026-02-27T16:24:59.798+08:00 TRACE 45512 --- [http-nio-9090-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [1]
+2026-02-27T16:24:59.799+08:00 TRACE 45512 --- [http-nio-9090-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (2:INTEGER) <- [2]
+2026-02-27T16:24:59.799+08:00 TRACE 45512 --- [http-nio-9090-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (3:INTEGER) <- [3]
+2026-02-27T16:24:59.799+08:00 TRACE 45512 --- [http-nio-9090-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (4:INTEGER) <- [4]
+2026-02-27T16:24:59.799+08:00 TRACE 45512 --- [http-nio-9090-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (5:INTEGER) <- [5]
+2026-02-27T16:24:59.799+08:00 TRACE 45512 --- [http-nio-9090-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (6:INTEGER) <- [7]

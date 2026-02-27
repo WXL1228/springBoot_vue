@@ -14,10 +14,7 @@ import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
@@ -115,7 +112,6 @@ public class AdminService {
         }
     }
 
-
     public List<Admin> findAll () {
        return adminRepository.findAll();
     };
@@ -155,5 +151,49 @@ public class AdminService {
         Example<Admin> example = Example.of(admin, matcher);
         Page<Admin> page = adminRepository.findAll(example, pageRequest);
         return PageInfo.of(page);
+    }
+
+
+    public List<Admin> findById(String ids) {
+        if (ids == null || ids.isEmpty()) {
+            throw new CustomException("用户id为空");
+        }
+//        List<String> idList = Arrays.stream(ids.split(","))
+//                .map(String::trim)
+//                .filter(id -> !id.isEmpty())
+//                .collect(Collectors.toList());
+
+        List<Integer> idList = Arrays.stream(ids.split(","))
+                .map(String::trim)
+                .filter(id -> !id.isEmpty())
+                .map(id -> {
+                    try {
+                        return Integer.valueOf(id); // 转换为 Integer
+                    } catch (NumberFormatException e) {
+                        throw new CustomException("无效的ID格式: " + id);
+                    }
+                })
+                .collect(Collectors.toList());
+        return adminRepository.findAllById(idList);
+    }
+
+    public List<Admin> findByIds(List<Integer> ids) {
+        if (ids == null || ids.isEmpty()) {
+            throw new CustomException("用户id为空");
+        }
+//        System.out.println("ids = "+ids);
+//
+//        List<Admin> list = new ArrayList<>();
+//        for (Integer id : ids) {
+//            Admin admin = adminRepository.findById(id).orElse(null);
+//            if (admin == null) {
+//                continue;
+//            }else {
+//                list.add(admin);
+//            }
+//        }
+//        return list;
+
+        return adminRepository.findAllById(ids);
     }
 }

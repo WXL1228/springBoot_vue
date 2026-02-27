@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.awt.print.Pageable;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping(value = "/admin")
@@ -86,7 +87,26 @@ public class AdminController {
         return Result.success(list);
     }
 
+    /**
+     * 根据id字符串来查
+     */
+    @Operation(summary = "admin列表", description = "查询admin分页查询信息")
+    @GetMapping(value = "/findById/{ids}")
+    public Result findById(String ids) {
+        List<Admin> list = adminService.findById(ids);
+        return Result.success(list);
+    }
 
+    /**
+     * 根据id字符串来查
+     */
+    @Operation(summary = "admin列表", description = "查询admin分页查询信息")
+    @PostMapping(value = "/findByIds")
+    public Result findByIds(@RequestBody Map<String, List<Integer>> request) {
+        List<Integer> ids = request.get("ids");
+        List<Admin> list = adminService.findByIds(ids);
+        return Result.success(list);
+    }
 }
 
 
