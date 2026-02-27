@@ -147,8 +147,6 @@ public class AdminService {
         return PageInfo.of(page);
     }
 
-    ;
-
     public PageInfo<Admin> findPage2(Admin admin) {
         Integer pageNum = admin.getPageNum();
         Integer pageSize = admin.getPageSize();
