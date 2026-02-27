@@ -1,5 +1,6 @@
 package com.example.controller;
 
+import com.example.common.PageInfo;
 import com.example.common.Result;
 import com.example.entity.Admin;
 import com.example.exception.CustomException;
@@ -7,8 +8,10 @@ import com.example.service.AdminService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.annotation.Resource;
+import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
 
+import java.awt.print.Pageable;
 import java.util.List;
 
 @RestController
@@ -49,4 +52,42 @@ public class AdminController {
       List<Admin> list =  adminService.findAll();
       return Result.success(list);
     }
+
+
+    /**
+     * 分页查询admin表数据
+     */
+    @Operation(summary = "admin列表", description = "查询admin分页查询信息")
+    @PostMapping(value = "/findPage")
+    public Result findPage(@RequestParam(defaultValue = "") String name, @RequestParam(defaultValue = "1") Integer pageNum, @RequestParam(defaultValue = "10") Integer pageSize) {
+        PageInfo<Admin> list = adminService.findPage(name, pageNum, pageSize);
+        return Result.success(list);
+    }
+
+    /**
+     * 分页查询admin表数据
+     *
+     * @param Admin
+     */
+    @Operation(summary = "admin列表", description = "查询admin分页查询信息")
+    @PostMapping(value = "/findPage1")
+    public Result findPage1(Admin Admin) {
+        PageInfo<Admin> list = adminService.findPage1(Admin);
+        return Result.success(list);
+    }
+
+    /**
+     * 分页查询admin表数据
+     */
+    @Operation(summary = "admin列表", description = "查询admin分页查询信息")
+    @PostMapping(value = "/findPage2")
+    public Result findPage2(Admin admin) {
+        PageInfo<Admin> list = adminService.findPage2(admin);
+        return Result.success(list);
+    }
+
+
 }
+
+
+

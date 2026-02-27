@@ -5,17 +5,19 @@ package com.example.service;
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.bean.copier.CopyOptions;
 import cn.hutool.core.collection.CollUtil;
+import com.example.common.PageInfo;
 import com.example.entity.Admin;
 import com.example.exception.CustomException;
 import com.example.repository.AdminRepository;
-import org.springframework.data.domain.Example;
+import org.springframework.data.domain.*;
 import jakarta.annotation.Resource;
-import org.springframework.data.domain.ExampleMatcher;
 import org.springframework.stereotype.Service;
 
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 @Service
@@ -113,11 +115,47 @@ public class AdminService {
         }
     }
 
+
     public List<Admin> findAll () {
        return adminRepository.findAll();
     };
 
+    public PageInfo<Admin> findPage(String name, Integer pageNum, Integer pageSize) {
+        Admin admin = new Admin();
+        admin.setName(name);
+        PageRequest pageRequest = PageRequest.of(pageNum - 1, pageSize);
+        ExampleMatcher matcher = ExampleMatcher.matching().withMatcher("name", ExampleMatcher.GenericPropertyMatchers.contains());
+        Example<Admin> example = Example.of(admin, matcher);
+        Page<Admin> page = adminRepository.findAll(example, pageRequest);
+        return PageInfo.of(page);
+    }
 
+    public PageInfo<Admin> findPage1(Admin admin) {
+        Integer current = admin.getPageNum();
+        Integer pageSize = admin.getPageSize();
+        ExampleMatcher matcher = ExampleMatcher.matching()
+                .withMatcher("userName", ExampleMatcher.GenericPropertyMatchers.contains())
+                .withMatcher("passWord", ExampleMatcher.GenericPropertyMatchers.contains())
+                .withMatcher("name", ExampleMatcher.GenericPropertyMatchers.exact())
+                .withMatcher("role", ExampleMatcher.GenericPropertyMatchers.contains())
+                .withMatcher("id", ExampleMatcher.GenericPropertyMatchers.contains())
+                .withMatcher("avatar", ExampleMatcher.GenericPropertyMatchers.contains())
+                .withIgnoreNullValues();
+        Example<Admin> example = Example.of(admin, matcher);
+        PageRequest pageRequest = PageRequest.of(current - 1, pageSize).withSort(Sort.by(Sort.Direction.DESC, "id"));
+        Page<Admin> page = adminRepository.findAll(example, pageRequest);
+        return PageInfo.of(page);
+    }
 
+    ;
 
+    public PageInfo<Admin> findPage2(Admin admin) {
+        Integer pageNum = admin.getPageNum();
+        Integer pageSize = admin.getPageSize();
+        PageRequest pageRequest = PageRequest.of(pageNum - 1, pageSize);
+        ExampleMatcher matcher = ExampleMatcher.matching().withStringMatcher(ExampleMatcher.StringMatcher.CONTAINING);
+        Example<Admin> example = Example.of(admin, matcher);
+        Page<Admin> page = adminRepository.findAll(example, pageRequest);
+        return PageInfo.of(page);
+    }
 }

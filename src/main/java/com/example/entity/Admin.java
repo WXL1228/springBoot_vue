@@ -53,4 +53,12 @@ public class Admin {
      */
     @Column(name = "username")
     private String userName;
+
+    @Transient
+    private Integer pageNum;
+
+    @Transient
+    private Integer pageSize;
+
+
 }
